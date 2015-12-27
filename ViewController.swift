@@ -2,8 +2,9 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController {
-    let mapView: MKMapView = MKMapView()
-    
+
+  let mapView: MKMapView = MKMapView()
+
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     button.frame = CGRect(origin: CGPoint(x: 100, y: 200), size: CGSize(width: 200, height: 200))
     button.translatesAutoresizingMaskIntoConstraints = false
     
+    button.addTarget(self, action: "changeMap:", forControlEvents: .TouchUpInside)
+
     self.view.addSubview(button)
 
 //    let topConstraint = button.topAnchor.constraintEqualToAnchor(self.view.topAnchor)
@@ -32,11 +35,11 @@ class ViewController: UIViewController {
     leadingConstraint.active = true
     trallingConstraint.active = true
     
-    button.addTarget(self, action: "changeMap", forControlEvents: .TouchUpInside)
   }
-    
-    func changeMap(sender: UIButton) {
-       mapView.mapType = .Hybrid
-    }
+
+  func changeMap(sender: UIButton!) {
+    mapView.mapType = .Hybrid
+    print(sender)
+  }
 
 }
