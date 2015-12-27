@@ -16,63 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC1-d0-ymX">
-                                <rect key="frame" x="288" y="20" width="25" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="tMn-k0-4Pd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEJ-4b-7yC">
-                                <rect key="frame" x="288" y="484" width="25" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="jGL-0b-Z8d"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb1-3c-haK">
-                                <rect key="frame" x="255" y="513" width="93" height="30"/>
-                                <state key="normal" title="Show Answer"/>
-                                <connections>
-                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLG-Co-Cln"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etv-F9-Vxt">
-                                <rect key="frame" x="252" y="59" width="98" height="482"/>
-                                <state key="normal" title="Next Question"/>
-                                <connections>
-                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tP6-xY-p2z"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="etv-F9-Vxt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cwy-UD-W09"/>
-                            <constraint firstItem="rb1-3c-haK" firstAttribute="centerX" secondItem="etv-F9-Vxt" secondAttribute="centerX" id="IaJ-jF-0CS"/>
-                            <constraint firstItem="pEJ-4b-7yC" firstAttribute="centerX" secondItem="etv-F9-Vxt" secondAttribute="centerX" id="V4E-L9-fIw"/>
-                            <constraint firstItem="etv-F9-Vxt" firstAttribute="top" secondItem="yC1-d0-ymX" secondAttribute="bottom" constant="18" id="Xgk-wC-gjr"/>
-                            <constraint firstItem="rb1-3c-haK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kPE-Pc-ZdE"/>
-                            <constraint firstItem="pEJ-4b-7yC" firstAttribute="leading" secondItem="yC1-d0-ymX" secondAttribute="leading" id="nfa-A0-k7x"/>
-                            <constraint firstItem="yC1-d0-ymX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="o9U-zL-QdD"/>
-                            <constraint firstItem="rb1-3c-haK" firstAttribute="top" secondItem="pEJ-4b-7yC" secondAttribute="bottom" constant="8" symbolic="YES" id="oDI-7L-UXS"/>
-                            <constraint firstAttribute="bottom" secondItem="pEJ-4b-7yC" secondAttribute="bottom" constant="95" id="rRQ-J0-cNZ"/>
-                            <constraint firstItem="yC1-d0-ymX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="wRe-he-uOQ"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="kPE-Pc-ZdE"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <connections>
-                        <outlet property="answerLabel" destination="yC1-d0-ymX" id="pm0-94-LLJ"/>
-                        <outlet property="questionLabel" destination="pEJ-4b-7yC" id="4WH-83-0Yc"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
